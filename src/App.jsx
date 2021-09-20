@@ -9,13 +9,14 @@ import React, {useState} from "react";
 import Menu from "./components/menu/Menu";
 
 function App() {
-  const [menuOpen,setMenuOpen] = useState(true)
+  const [menuOpen,setMenuOpen] = useState(false)
+  const [eyeClosed, setEyeClosed] = useState(false)
   return (
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
-        <Intro/>
+        <Intro eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
         <Portfolio/>
         <Works/>
         <Testimonials/>

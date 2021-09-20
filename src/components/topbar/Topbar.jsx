@@ -1,6 +1,6 @@
 import "./topbar.scss"
 import "./Daniel Curtis.png"
-import MailIcon from '@mui/icons-material/Mail';
+// import MailIcon from '@mui/icons-material/Mail';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (

@@ -1,3 +1,56 @@
 .intro {
-background-color: lightpink;
+background-color: white;
+display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .bio-text {
+      padding: 20px 100px 10px 70px;
+    }
+
+    h3 {
+      padding-left: 35px;
+    }
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+
+      img {
+        padding: 10px 100px 100px 90px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        width: 50px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+      }
+
+      .img:hover .overlay {
+        opacity: 1;
+      }
+
+
+
+    }
+  }
+
+  .right {
+    flex: 0.5;
+  }
+
+  &.active {
+    background-color: blue;
+  }
 }
