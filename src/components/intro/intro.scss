@@ -1,56 +1,95 @@
+@import "../../global.scss";
+
 .intro {
 background-color: white;
 display: flex;
+transition: all 2s ease;
 
   .left {
     flex: 0.5;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .bio-text {
-      padding: 20px 100px 10px 70px;
+      padding: 5px 5px 5px 5px;
     }
 
-    h3 {
-      padding-left: 35px;
-    }
-
-    .imgContainer {
-      width: 700px;
-      height: 700px;
-
-      img {
-        padding: 10px 100px 100px 90px;
-        border-radius: 50%;
-        cursor: pointer;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 50px;
-        width: 50px;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #008CBA;
-      }
-
-      .img:hover .overlay {
-        opacity: 1;
-      }
-
-
-
-    }
   }
 
   .right {
     flex: 0.5;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bio-text {
+      padding: 20px 100px 10px 70px;
+    }
+
+    .imgContainer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      padding: 5px 5px 5px 5px;
+
+      img {
+        position: absolute;
+        border-radius: 50%;
+        max-width: 70%;
+        min-width: 200px;
+        height: auto;
+        opacity: 0.8;
+      }
+
+      .overlay {
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+        background: darkblue;
+        color: white;
+        font-size: 50px;
+        font-weight: 100;
+        opacity: 0;
+      }
+
+      .overlay-description {
+        position: relative;
+      }
+
+      .overlay:hover {
+        opacity: 0.20;
+        cursor: pointer;
+      }
+
+      .overlay > * {
+        transform: translateY(20px);
+        transition: transform 0.5s;
+        text-shadow: 1px 1px;
+      }
+
+      .overlay:hover > * {
+        transform: translateY(0);
+      }
+
+    }
   }
 
   &.active {
-    background-color: blue;
+    background-color: $mainColor;
+    color: white;
+    transition: all 2s ease;
   }
 }

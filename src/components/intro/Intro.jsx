@@ -10,15 +10,18 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
           <h3>- I'm Daniel, a Front End Developer From London.</h3>
           <br></br>
         </div>
-        <div className="imgContainer">
-          <img src="assets/Daniel.png" alt="Daniel Curtis" onClick={() => setEyeClosed(!eyeClosed)}></img>
-          <div className="overlay">
-            Daniel Curtis
-          </div>
-        </div>
       </div>
       <div className="right">
-
+        <div className="imgContainer">
+          <img src="assets/Daniel.png" alt="Daniel Curtis"></img>
+          <div className="overlay" onClick={() => setEyeClosed(!eyeClosed)}>
+            <div className="overlay-title">
+              <div className="overlay-description">
+                Daniel Curtis
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
