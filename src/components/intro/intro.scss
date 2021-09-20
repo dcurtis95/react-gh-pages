@@ -1,5 +1,11 @@
 @import "../../global.scss";
 
+@media(max-width: 840px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+
 .intro {
 background-color: white;
 display: flex;
@@ -11,11 +17,7 @@ transition: all 2s ease;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .bio-text {
-      padding: 5px 5px 5px 5px;
-    }
-
+    padding-left: 20px;;
   }
 
   .right {
@@ -25,9 +27,6 @@ transition: all 2s ease;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .bio-text {
-      padding: 20px 100px 10px 70px;
-    }
 
     .imgContainer {
       position: relative;
@@ -38,7 +37,8 @@ transition: all 2s ease;
       position: absolute;
       width: 500px;
       height: 500px;
-      padding: 5px 5px 5px 5px;
+      margin-bottom: 120px;
+
 
       img {
         position: absolute;
