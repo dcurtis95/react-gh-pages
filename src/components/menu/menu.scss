@@ -1,5 +1,13 @@
 @import "../../global.scss";
 
+@media(max-width: 840px) {
+  .menu {
+    &.active {
+      min-width: 100%;
+      transition: all 0s ease;
+    }
+  }
+}
 .menu {
   width: 300px;
   height: 100vh;
