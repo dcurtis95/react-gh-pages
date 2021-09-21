@@ -1,8 +1,15 @@
 @import "../../global.scss";
 
+@media(max-width: 2000px) {
+  .intro {
+    font-size: 32px;
+  }
+}
+
 @media(max-width: 840px) {
   .intro {
     flex-direction: column;
+    font-size: 20px;
   }
 }
 
