@@ -8,7 +8,14 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            dcurtis.
+            <span>d</span>
+            <span>c</span>
+            <span>u</span>
+            <span>r</span>
+            <span>t</span>
+            <span>i</span>
+            <span>s</span>
+            <span>.</span>
             </a>
           {/* <a href="#intro" className="logo"><img alt="Daniel Curtis" src={require("./Daniel Curtis.png").default} height={55} width={70}></img></a> */}
           <div className="itemContainer">
