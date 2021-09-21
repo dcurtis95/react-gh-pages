@@ -1,13 +1,33 @@
 import "./intro.scss"
+import { init } from 'ityped'
+import { useEffect, useRef } from "react"
 
 export default function Intro({ eyeClosed, setEyeClosed }) {
+
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      startDelay: 20,
+      typeSpeed: 100,
+      backDelay: 10000,
+      backSpeed: 100,
+      strings: ["Hello!", "Welcome!"],
+    });
+  }, []);
+
   return (
     <div className={"intro " + (eyeClosed && "active")} id="intro">
       <div className="left">
         <div className="bio-text">
-          <h1>Hello!</h1>
+          <h1>
+            &#160;
+            <span ref={textRef}></span>
+
+          </h1>
           <br></br>
-          <h3>- I'm Daniel, a Front End Developer from London.</h3>
+          <h3>I'm Daniel, a Front End Developer from London.</h3>
           <br></br>
         </div>
       </div>
