@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { featuredPortfolio, webPortfolio, mobilePortfolio, rubyPortfolio, reactPortfolio } from "../../data";
+import { webPortfolio, mobilePortfolio, rubyPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -31,9 +31,6 @@ export default function Portfolio() {
       break;
       case "ruby":
       setData(rubyPortfolio);
-      break;
-      case "react":
-      setData(reactPortfolio);
       break;
       default:
       setData(webPortfolio);
