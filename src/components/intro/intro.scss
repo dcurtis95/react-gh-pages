@@ -2,7 +2,32 @@
 
 @media(max-width: 2000px) {
   .intro {
-    font-size: 32px;
+    font-size: 30px;
+  }
+    @media(max-width: 1850px) {
+    .intro {
+      font-size: 28px;
+    }
+      @media(max-width: 1555px) {
+      .intro {
+        font-size: 24px;
+      }
+        @media(max-width: 1350px) {
+        .intro {
+          font-size: 20px;
+        }
+          @media(max-width: 1120px) {
+          .intro {
+            font-size: 16px;
+          }
+            @media(max-width: 900px) {
+            .intro {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -122,6 +147,22 @@ transition: all 2s ease;
 
       .overlay:hover > * {
         transform: translateY(0);
+      }
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100%{
+          opacity: 0;
+        }
       }
     }
   }
