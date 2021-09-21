@@ -7,7 +7,7 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
         <div className="bio-text">
           <h1>Hello!</h1>
           <br></br>
-          <h3>- I'm Daniel, a Front End Developer From London.</h3>
+          <h3>- I'm Daniel, a Front End Developer from London.</h3>
           <br></br>
         </div>
       </div>
