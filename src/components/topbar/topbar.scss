@@ -68,12 +68,6 @@
         }
       }
 
-      .logo:hover {
-        color: grey;
-        // transition-property: all;
-        // transition-timing-function: ease;
-      }
-
       @keyframes animate {
         from {
           -webkit-transform: rotateX(90deg);
