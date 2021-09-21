@@ -42,6 +42,9 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
             </div>
           </div>
         </div>
+        <a href="#portfolio">
+          <img src="assets/down.png" alt="down arrow" />
+        </a>
       </div>
     </div>
   )
