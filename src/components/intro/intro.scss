@@ -10,6 +10,16 @@
   .intro {
     flex-direction: column;
     font-size: 20px;
+    .left {
+      max-height: 40%;
+    }
+    .right {
+      max-height: 60%;
+    }
+    img {
+      width: 300px;
+    }
+
   }
 }
 
@@ -22,12 +32,10 @@ transition: all 2s ease;
     flex: 0.5;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding-left: 20px;
 
     .bio-text {
-      padding-bottom: 10px;
       width: 90%;
     }
   }
