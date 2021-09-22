@@ -38,18 +38,19 @@ export default function Works() {
     <div className="works" id="works">
       <div className="slider" style={{transform: `translateX(-${currentSlide *100}vw)`}}>
         {data.map(d=>(
-         <div className="container">
+        <div className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <div className="imgContainer">
-                  <img src={d.icon} alt="Web App" />
+                <div className="alignContainer">
+                  <div className="imgContainer">
+                    <img src={d.icon} alt="Web App" />
+                  </div>
+                  <h2>{d.title}</h2>
                 </div>
-                <h2>{d.title}</h2>
                 <p>
                   {d.desc}
                 </p>
-                <span>Projects</span>
               </div>
             </div>
             <div className="right">

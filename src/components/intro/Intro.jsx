@@ -24,11 +24,8 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
           <h1>
             &#160;
             <span ref={textRef}></span>
-
           </h1>
-          <br></br>
           <h3>I'm Daniel, a Front End Developer from London.</h3>
-          <br></br>
         </div>
       </div>
       <div className="right">
