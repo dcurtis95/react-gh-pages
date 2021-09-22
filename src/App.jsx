@@ -2,7 +2,7 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
-import Testimonials from "./components/testimonials/Testimonials";
+import Aboutme from "./components/aboutme/Aboutme";
 import Contact from "./components/contact/Contact";
 import "./app.scss"
 import React, {useState} from "react";
@@ -19,7 +19,7 @@ function App() {
         <Intro eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
         <Portfolio/>
         <Works/>
-        <Testimonials/>
+        <Aboutme/>
         <Contact/>
       </div>
     </div>

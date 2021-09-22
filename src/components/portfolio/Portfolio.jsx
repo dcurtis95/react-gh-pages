@@ -56,9 +56,7 @@ export default function Portfolio() {
 
 
         <div className="item">
-          <a href={d.url}>
               <img src={d.img} alt={d.title} />
-          </a>
             <h3>{d.title}</h3>
         </div>
         ))}

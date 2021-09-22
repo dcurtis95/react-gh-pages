@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-@media(min-width: 1851px) {
+@media(max-width: 2000px) {
   .intro {
     font-size: 30px;
   }
@@ -31,15 +31,47 @@
   }
 }
 
+@media(min-width: 841px) {
+  .intro {
+    .left {
+      flex: 0.5;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .right {
+      flex: 0.5;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 @media(max-width: 840px) {
   .intro {
     flex-direction: column;
     font-size: 20px;
     .left {
-      max-height: 40%;
+      flex: 0.4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .bio-text {
+        max-width: 80%;
+        text-align: center;
+      }
     }
     .right {
-      max-height: 60%;
+      flex: 0.4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
     img {
       width: 300px;
@@ -58,19 +90,12 @@ display: flex;
 transition: all 2s ease;
 
   .left {
-    flex: 0.5;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-
     .bio-text {
       width: 90%;
     }
     h3 {
-      padding-left: 13px;
+      padding-left: 11px;
     }
-
     .ityped-cursor {
       animation: blink 2s infinite;
     }
@@ -86,13 +111,6 @@ transition: all 2s ease;
   }
 
   .right {
-    flex: 0.5;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     .imgContainer {
       position: relative;
       display: flex;
@@ -152,7 +170,7 @@ transition: all 2s ease;
 
     a {
       position: absolute;
-      bottom: 10px;
+      margin-top: 400px;
 
       img {
         width: 30px;
