@@ -32,7 +32,15 @@ export default function Aboutme() {
                   <h2 onClick={() => setAbStyle(!abStyle)}>About Me</h2>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at fuga inventore doloremque eligendi dolorem itaque tempore, animi illo temporibus quisquam eveniet similique fugiat officia, cumque in voluptatum aspernatur placeat?
+                  Nice to meet you. <br></br>
+                  I’m Daniel, a Front End Developer specialising in React. <br></br>
+                  I’ve been interested in coding from an early age; working on small projects here and there.<br></br>
+                  I’m a psychiatric nurse by background and from working in the NHS,
+                  I have noted many inefficiencies with clinical documentation software.
+                  This is what inspired me to complete a product-driven intensive bootcamp,
+                  I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design. <br></br><br></br>
+                  Feel free to browse some of my <a href="#works">work</a>, view my <p onClick={() => handleClick("right")}><strong>skills</strong>.</p>
+
                   </p>
                 </div>
               </div>
@@ -46,7 +54,9 @@ export default function Aboutme() {
                   <h2 onClick={() => setAbStyle(!abStyle)}>Skills</h2>
                 </div>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae debitis at non tempora mollitia. Quod iure placeat error recusandae nobis excepturi eius accusamus magni illum! Voluptate eligendi aut deleniti ab?
+                  Languages: Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.<br></br><br></br>
+                  Methods & Tools: Webpack, NPM, Yarn, Git, Heroku, OOP.<br></br><br></br>
+                  Frameworks & Libs: React, jQuery, Node, Rails, Bootstrap.
                 </p>
               </div>
             </div>
