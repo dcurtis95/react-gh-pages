@@ -4,6 +4,7 @@ import "./portfolio.scss";
 import { webPortfolio, mobilePortfolio, rubyPortfolio } from "../../data";
 
 export default function Portfolio() {
+  const [portStyle, setPortStyle] = useState(false);
   const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
   const list = [
@@ -39,8 +40,8 @@ export default function Portfolio() {
   },[selected])
 
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+    <div className={"portfolio " + (portStyle && "active")} id="portfolio">
+      <h1 onClick={() => setPortStyle(!portStyle)}>Portfolio</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList

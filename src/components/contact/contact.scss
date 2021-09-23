@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-  background-color: white;
+  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,6 +63,7 @@
           border-radius: 10px;
           font-weight: 500;
           cursor: pointer;
+          box-shadow: 2px 2px 15px -8px black;
 
           &:focus {
             outline: none;
