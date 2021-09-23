@@ -55,6 +55,10 @@
     background-color: whitesmoke;
     width: 90px;
     box-shadow: 0px 0px 15px -8px black;
+
+    &.active {
+      animation: blink 3s steps(2) infinite;
+    }
   }
 
   .container {
