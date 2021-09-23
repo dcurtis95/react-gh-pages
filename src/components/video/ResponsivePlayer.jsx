@@ -9,7 +9,7 @@ const ResponsivePlayer = () => {
           className='react-player'
           url='https://soundcloud.com/a-fluffy-sheep/tracks'
           width='100%'
-          height='66%'
+          height='320px'
         />
       </div>
     )
