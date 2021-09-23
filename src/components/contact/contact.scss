@@ -25,6 +25,7 @@
 
       h2 {
         font-size: 30px;
+        cursor: pointer;
       }
 
       form {
@@ -74,6 +75,14 @@
           color: green;
         }
       }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    transition: all 2s ease;
+    .item {
+      box-shadow: 1px 1px 20px -1px whitesmoke;
     }
   }
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./aboutme.scss"
 
 export default function Aboutme() {
+  const [abStyle, setAbStyle] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
@@ -21,13 +22,13 @@ export default function Aboutme() {
   }
   return (
     <div className="aboutme" id="aboutme">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+      <div className={"slider " + (abStyle && "active")} style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           <div className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
                   <div className="alignContainer">
-                    <h2>Title</h2>
+                  <h2 onClick={() => setAbStyle(!abStyle)}>Title</h2>
                   </div>
                   <p>
                     Description

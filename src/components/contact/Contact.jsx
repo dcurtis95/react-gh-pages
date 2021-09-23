@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./contact.scss";
 
 export default function Contact() {
+  const [contactStyle, setContactStyle] = useState(false);
   const [message, setMessage] = useState(false);
 
   const handleSubmit = (e) => {
@@ -9,10 +10,10 @@ export default function Contact() {
     setMessage(true);
   };
   return (
-    <div className="contact" id="contact">
+    <div className={"contact " + (contactStyle && "active")} id="contact">
       <div className="item">
         <div className="right">
-          <h2>Contact.</h2>
+          <h2 onClick={() => setContactStyle(!contactStyle)}>Contact.</h2>
           <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Email" />
             <textarea placeholder="Message"></textarea>
