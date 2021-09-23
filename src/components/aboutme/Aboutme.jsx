@@ -59,8 +59,13 @@ export default function Aboutme() {
                 <div className="alignContainer">
                   <h2 onClick={() => setAbStyle(!abStyle)}>Interests</h2>
                 </div>
-                <p>
-                  My biggest hobbies are <a href="http://www.danielcookingblog.me/">Cooking</a>, <code>coding</code> and music:
+                <p className="mediaText">
+                  My biggest hobbies are
+                  <a href="http://www.danielcookingblog.me/"> Cooking</a>,
+                  <a href="https://github.com/dcurtis95"><code> Coding</code></a>,
+                  <a href="https://www.swingpatrol.co.uk/"> Dancing</a>,
+                  <a href="https://boardgamegeek.com/collection/user/Kerze"> Board Games </a>and
+                  <a href="https://soundcloud.com/a-fluffy-sheep/tracks"> Music</a>:
                 </p>
                 <div className="s-container">
                 <ResponsivePlayer />
