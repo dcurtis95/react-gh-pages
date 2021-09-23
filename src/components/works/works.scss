@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 @media(min-width: 1050px) {
   .works {
     .arrow.left {
@@ -104,6 +106,7 @@
               justify-content: flex-start;
               h2 {
                 margin-left: 10px;
+                cursor: pointer;
               }
             }
 
@@ -156,6 +159,14 @@
         }
       }
     }
+
+    &.active {
+    background-color: $mainColor;
+    transition: all 2s ease;
+      .item {
+        box-shadow: 1px 1px 20px -1px whitesmoke;
+      }
+    }
   }
 
   .arrow {
@@ -168,6 +179,5 @@
       transform: rotateY(180deg);
     }
   }
-
 
 }
