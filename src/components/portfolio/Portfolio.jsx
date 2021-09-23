@@ -4,7 +4,7 @@ import "./portfolio.scss";
 import { webPortfolio, mobilePortfolio, rubyPortfolio } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
   const list = [
     {
