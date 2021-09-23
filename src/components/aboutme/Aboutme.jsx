@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ResponsivePlayer from "../video/ResponsivePlayer";
 import "./aboutme.scss"
 
 export default function Aboutme() {
@@ -28,15 +29,12 @@ export default function Aboutme() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="alignContainer">
-                  <h2 onClick={() => setAbStyle(!abStyle)}>Title</h2>
+                  <h2 onClick={() => setAbStyle(!abStyle)}>About Me</h2>
                   </div>
                   <p>
-                    Description
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo at fuga inventore doloremque eligendi dolorem itaque tempore, animi illo temporibus quisquam eveniet similique fugiat officia, cumque in voluptatum aspernatur placeat?
                   </p>
                 </div>
-              </div>
-              <div className="right">
-
               </div>
             </div>
           </div>
@@ -45,15 +43,12 @@ export default function Aboutme() {
             <div className="left">
               <div className="leftContainer">
                 <div className="alignContainer">
-                  <h2>Title</h2>
+                  <h2 onClick={() => setAbStyle(!abStyle)}>Skills</h2>
                 </div>
                 <p>
-                  Description
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae debitis at non tempora mollitia. Quod iure placeat error recusandae nobis excepturi eius accusamus magni illum! Voluptate eligendi aut deleniti ab?
                 </p>
               </div>
-            </div>
-            <div className="right">
-
             </div>
           </div>
         </div>
@@ -62,15 +57,15 @@ export default function Aboutme() {
             <div className="left">
               <div className="leftContainer">
                 <div className="alignContainer">
-                  <h2>Title</h2>
+                  <h2 onClick={() => setAbStyle(!abStyle)}>Interests</h2>
                 </div>
                 <p>
-                  Description
+                  My biggest hobbies are <a href="http://www.danielcookingblog.me/">Cooking</a>, <code>coding</code> and music:
                 </p>
+                <div className="s-container">
+                <ResponsivePlayer />
+                </div>
               </div>
-            </div>
-            <div className="right">
-
             </div>
           </div>
         </div>
