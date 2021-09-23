@@ -1,12 +1,15 @@
 @import "../../global.scss";
 
-@media(min-width: 1050px) {
+@media(min-width: 1051px) {
   .aboutme {
     .arrow.left {
       left: 100px;
     }
     .arrow.right {
       right: 100px;
+    }
+    p {
+      font-size: 18px;
     }
   }
 }
@@ -22,9 +25,12 @@
           flex-direction: column;
           .left {
             align-items: flex-start;
-            p {
-              font-size: 20px;
+            .card-one {
+              p {
+              font-size: 14px;
+              }
             }
+
           }
           .right {
             max-height: 46%;
@@ -105,9 +111,28 @@
               flex-direction: row;
               align-items: center;
               justify-content: center;
-              h2 {
+            }
+
+            h2 {
                 cursor: pointer;
-                margin-bottom: 10px;
+            }
+            .card-one {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+              position: relative;
+            }
+
+            .card-two {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
+              h3 {
+                font-size: 24px;
               }
             }
 
@@ -130,7 +155,6 @@
             }
 
             p {
-              font-size: 18px;
               line-height: 22px;
               text-align: center;
             }

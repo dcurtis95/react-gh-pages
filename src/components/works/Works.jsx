@@ -27,7 +27,7 @@ export default function Works() {
       img: "assets/Portfolio.png",
       url: "https://www.daniel-curtis.co.uk/",
       icon: "assets/mobile.png",
-      desc: "A responsive react project designed and built by me, my first react project."
+      desc: "A responsive react project created around the idea of making every single element interactive! Designed and built by me, my first react project."
     },
   ];
 
