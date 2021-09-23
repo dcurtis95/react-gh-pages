@@ -40,6 +40,7 @@
 
   h1 {
     margin-top: 5%;
+    cursor: pointer;
   }
 
   ul {
@@ -57,7 +58,7 @@
     box-shadow: 0px 0px 15px -8px black;
 
     &.active {
-      animation: blink 3s steps(2) infinite;
+      animation: blink 2s ease-in-out infinite alternate;
     }
   }
 
@@ -73,7 +74,6 @@
       width: 300px;
       height: 240px;
       border-radius: 20px;
-      border: 1px solid rgb(221, 221, 221);
       margin: 5px 10px;
       display: flex;
       align-items: center;
@@ -83,7 +83,7 @@
       transition: all .5s ease;
       cursor: pointer;
       overflow: hidden;
-      box-shadow: 0px 0px 10px -8px black;
+      box-shadow: 0px 0px 10px -7px black;
 
       h3{
         position: absolute;
@@ -105,6 +105,19 @@
           z-index: 0;
         }
       }
+    }
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+    transition: all 2s ease;
+    .portfolioList {
+      background-color: $mainColor;
+      box-shadow: 2px 2px 15px -5px whitesmoke;
+    }
+    .item {
+      box-shadow: 0px 0px 15px -5px whitesmoke;
     }
   }
 }
