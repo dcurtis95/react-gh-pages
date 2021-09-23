@@ -39,8 +39,6 @@ export default function Aboutme() {
                   I have noted many inefficiencies with clinical documentation software.
                   This is what inspired me to complete a product-driven intensive bootcamp,
                   I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design. <br></br><br></br>
-                  Feel free to browse some of my <a href="#works">work</a>, view my <p onClick={() => handleClick("right")}><strong>skills</strong>.</p>
-
                   </p>
                 </div>
               </div>
