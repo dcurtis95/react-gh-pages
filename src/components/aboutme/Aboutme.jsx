@@ -28,18 +28,18 @@ export default function Aboutme() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                  <div className="alignContainer">
+                  <div className="card-one">
                   <h2 onClick={() => setAbStyle(!abStyle)}>About Me</h2>
+                    <p>Nice to meet you.</p>
+                    <p>I’m Daniel, a Front End Developer specialising in React.</p>
+                    <p>I’ve been interested in coding from an early age; working on small projects here and there.</p>
+                    <p>I’m a psychiatric nurse by background and from working in the NHS,</p>
+                    <p>I have noted many inefficiencies with clinical documentation software.</p>
+                    <p>This is what inspired me to complete a product-driven intensive bootcamp,</p>
+                    <p>
+                    I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design. <br></br><br></br>
+                    </p>
                   </div>
-                  <p>
-                  Nice to meet you. <br></br>
-                  I’m Daniel, a Front End Developer specialising in React. <br></br>
-                  I’ve been interested in coding from an early age; working on small projects here and there.<br></br>
-                  I’m a psychiatric nurse by background and from working in the NHS,
-                  I have noted many inefficiencies with clinical documentation software.
-                  This is what inspired me to complete a product-driven intensive bootcamp,
-                  I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design. <br></br><br></br>
-                  </p>
                 </div>
               </div>
             </div>
@@ -48,14 +48,15 @@ export default function Aboutme() {
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <div className="alignContainer">
-                  <h2 onClick={() => setAbStyle(!abStyle)}>Skills</h2>
+                <div className="card-two">
+                <h2 onClick={() => setAbStyle(!abStyle)}>Skills</h2>
+                  <h3>Languages:</h3>
+                  <p>Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.</p>
+                  <h3>Methods & Tools:</h3>
+                  <p>Webpack, NPM, Yarn, Git, Heroku, OOP.</p>
+                  <h3>Frameworks & Libs:</h3>
+                  <p>React, jQuery, Node, Rails, Bootstrap.</p>
                 </div>
-                <p>
-                  Languages: Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.<br></br><br></br>
-                  Methods & Tools: Webpack, NPM, Yarn, Git, Heroku, OOP.<br></br><br></br>
-                  Frameworks & Libs: React, jQuery, Node, Rails, Bootstrap.
-                </p>
               </div>
             </div>
           </div>
