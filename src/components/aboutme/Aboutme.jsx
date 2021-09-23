@@ -20,7 +20,7 @@ export default function Aboutme() {
       setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
   }
   return (
-    <div className="works" id="works">
+    <div className="aboutme" id="aboutme">
       <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           <div className="container">
             <div className="item">

@@ -1,5 +1,5 @@
 @media(min-width: 1050px) {
-  .works {
+  .aboutme {
     .arrow.left {
       left: 100px;
     }
@@ -10,7 +10,7 @@
 }
 
 @media(max-width: 1050px) {
-  .works {
+  .aboutme {
     .slider {
       min-height: 450px;
       .container {
@@ -50,7 +50,7 @@
   }
 }
 
-.works{
+.aboutme{
   background-color: whitesmoke;
   display: flex;
   align-items: center;
