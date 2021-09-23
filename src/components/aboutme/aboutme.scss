@@ -126,14 +126,27 @@
             }
 
             h2 {
-              font-size: 22px;
+              font-size: 30px;
             }
 
             p {
               font-size: 18px;
               line-height: 22px;
               text-align: center;
-              height: 10%;
+            }
+
+            .mediaText {
+                height: 10%;
+                margin-top: 10px;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-weight: 700;
+                }
+
+                a:hover {
+                  color: grey;
+                }
             }
 
             .s-container {

@@ -154,6 +154,7 @@ transition: all 2s ease;
         font-size: 50px;
         font-weight: 100;
         opacity: 0;
+        z-index: 2;
       }
 
       .overlay-description {
@@ -161,7 +162,6 @@ transition: all 2s ease;
       }
 
       .overlay:hover {
-        // opacity: 0.20;
         cursor: pointer;
       }
 
@@ -179,6 +179,7 @@ transition: all 2s ease;
     a {
       position: absolute;
       margin-top: 400px;
+      z-index: 0;
 
       img {
         width: 30px;
