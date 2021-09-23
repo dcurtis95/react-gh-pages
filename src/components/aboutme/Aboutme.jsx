@@ -68,7 +68,7 @@ export default function Aboutme() {
                   <h2 onClick={() => setAbStyle(!abStyle)}>Interests</h2>
                 </div>
                 <p className="mediaText">
-                  My biggest hobbies are
+                  My hobbies include
                   <a href="http://www.danielcookingblog.me/"> Cooking</a>,
                   <a href="https://github.com/dcurtis95"><code> Coding</code></a>,
                   <a href="https://www.swingpatrol.co.uk/"> Dancing</a>,
