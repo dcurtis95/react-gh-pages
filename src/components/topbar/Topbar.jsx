@@ -1,6 +1,4 @@
 import "./topbar.scss"
-import "./Daniel Curtis.png"
-// import MailIcon from '@mui/icons-material/Mail';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -17,10 +15,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <span>s</span>
             <span>.</span>
             </a>
-          {/* <a href="#intro" className="logo"><img alt="Daniel Curtis" src={require("./Daniel Curtis.png").default} height={55} width={70}></img></a> */}
           <div className="itemContainer">
-            {/* <MailIcon className="icon" />
-            <span>danielcurtis95@gmail.com</span> */}
           </div>
           <div className="itemContainer">
             <span></span>
