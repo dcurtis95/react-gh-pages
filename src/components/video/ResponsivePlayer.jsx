@@ -10,6 +10,7 @@ const ResponsivePlayer = () => {
           url='https://soundcloud.com/a-fluffy-sheep/tracks'
           width='100%'
           height='320px'
+          SameSite='Strict'
         />
       </div>
     )
