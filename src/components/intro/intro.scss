@@ -95,8 +95,12 @@
 background-color: white;
 display: flex;
 transition: all 2s ease;
+padding-top: 70px;
+overflow: hidden;
 
   .left {
+    // margin-bottom: 70px;
+    // padding-bottom: -70px;
     .bio-text {
       width: 90%;
     }
@@ -119,6 +123,8 @@ transition: all 2s ease;
   }
 
   .right {
+    // margin-bottom: 70px;
+    // padding-bottom: -70px;
     .imgContainer {
       position: relative;
       display: flex;
