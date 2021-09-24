@@ -29,15 +29,15 @@ export default function Aboutme() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="card-one">
-                  <h2 onClick={() => setAbStyle(!abStyle)}>About Me</h2>
-                    <p>Nice to meet you.</p>
-                    <p>I’m Daniel, a Front End Developer specialising in React.</p>
-                    <p>I’ve been interested in coding from an early age; working on small projects here and there.</p>
-                    <p>I’m a psychiatric nurse by background and from working in the NHS,</p>
-                    <p>I have noted many inefficiencies with clinical documentation software.</p>
-                    <p>This is what inspired me to complete a product-driven intensive bootcamp,</p>
                     <p>
-                    I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design. <br></br><br></br>
+                    <h2 onClick={() => setAbStyle(!abStyle)}>About Me.</h2><br></br>
+                    Nice to meet you.<br></br><br></br>
+                    I’m Daniel, a Front End Developer specialising in React.<br></br><br></br>
+                    I’ve been interested in coding from an early age; working on small projects here and there. <br></br><br></br>
+                    I’m a psychiatric nurse by background and from working in the NHS,
+                    I have noted many inefficiencies with clinical documentation software.
+                    This is what inspired me to complete a product-driven intensive bootcamp,
+                    I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design.
                     </p>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ export default function Aboutme() {
             <div className="left">
               <div className="leftContainer">
                 <div className="card-two">
-                <h2 onClick={() => setAbStyle(!abStyle)}>Skills</h2>
+                <h2 onClick={() => setAbStyle(!abStyle)}>Skills.</h2>
                   <h3>Languages:</h3>
                   <p>Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.</p>
                   <h3>Methods & Tools:</h3>
@@ -66,9 +66,10 @@ export default function Aboutme() {
             <div className="left">
               <div className="leftContainer">
                 <div className="alignContainer">
-                  <h2 onClick={() => setAbStyle(!abStyle)}>Interests</h2>
+
                 </div>
                 <p className="mediaText">
+                  <h2 onClick={() => setAbStyle(!abStyle)}>Interests.</h2>
                   My hobbies include
                   <a href="http://www.danielcookingblog.me/"> Cooking</a>,
                   <a href="https://github.com/dcurtis95"><code> Coding</code></a>,
