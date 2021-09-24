@@ -3,14 +3,14 @@
 
     .sections{
       width: 100%;
-      height: calc(100vh - 70px);
-      background-color: lightsalmon;
+      height: 100vh;
+      background-color: white;
       position: relative;
-      top: 70px;
+      top: 0px;
       scroll-behavior: smooth;
       scroll-snap-type: y mandatory;
       scrollbar-width: none;
-      scroll-padding-top: 30px;
+      scroll-padding-top: 0px;
         &::-webkit-scrollbar{
             display: none;
         }

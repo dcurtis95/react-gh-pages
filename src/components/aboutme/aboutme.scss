@@ -36,6 +36,7 @@
             .card-one {
               p {
               font-size: 14px;
+              padding: 10px
               }
             }
 
@@ -66,11 +67,13 @@
 }
 
 .aboutme{
-  background-color: whitesmoke;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-items: center;
   position: relative;
+  padding-top: 70px;
+  overflow: hidden;
 
   .slider {
     height: 100%;
