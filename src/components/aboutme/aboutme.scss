@@ -9,7 +9,12 @@
       right: 100px;
     }
     p {
-      font-size: 18px;
+      font-size: 20px;
+    }
+    .card-one {
+      p {
+        height: 100%;
+      }
     }
   }
 }
@@ -115,6 +120,7 @@
 
             h2 {
                 cursor: pointer;
+                height: 40px;
             }
             .card-one {
               height: 100%;

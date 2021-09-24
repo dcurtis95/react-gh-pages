@@ -7,7 +7,7 @@ export default function Works() {
   const data = [
     {
       id: 1,
-      title: "BeNatural",
+      title: "BeNatural.",
       img: "assets/BeNatural.png",
       url: "http://be-natural-project.herokuapp.com/",
       icon: "assets/globe.png",
@@ -15,7 +15,7 @@ export default function Works() {
     },
     {
       id: 2,
-      title: "LaCasserole",
+      title: "LaCasserole.",
       img: "assets/LaCasserole.png",
       url: "https://la-casserole-new.herokuapp.com/chefs",
       icon: "assets/globe.png",
@@ -23,7 +23,7 @@ export default function Works() {
     },
     {
       id: 3,
-      title: "Portfolio",
+      title: "Portfolio.",
       img: "assets/Portfolio.png",
       url: "https://www.daniel-curtis.co.uk/",
       icon: "assets/mobile.png",

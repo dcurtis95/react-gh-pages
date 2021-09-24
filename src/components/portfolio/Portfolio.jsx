@@ -41,7 +41,7 @@ export default function Portfolio() {
 
   return (
     <div className={"portfolio " + (portStyle && "active")} id="portfolio">
-      <h1 onClick={() => setPortStyle(!portStyle)}>Portfolio</h1>
+      <h1 onClick={() => setPortStyle(!portStyle)}>Portfolio.</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
