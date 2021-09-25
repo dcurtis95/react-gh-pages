@@ -2,8 +2,7 @@ import { useState } from "react";
 import ResponsivePlayer from "../video/ResponsivePlayer";
 import "./aboutme.scss"
 
-export default function Aboutme() {
-  const [abStyle, setAbStyle] = useState(false);
+export default function Aboutme({ eyeClosed, setEyeClosed }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
@@ -23,14 +22,14 @@ export default function Aboutme() {
   }
   return (
     <div className="aboutme" id="aboutme">
-      <div className={"slider " + (abStyle && "active")} style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+      <div className={"slider " + (eyeClosed && "active")} style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
           <div className="container">
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
                   <div className="card-one">
                     <p>
-                    <h2 onClick={() => setAbStyle(!abStyle)}>About Me.</h2><br></br>
+                    <h2 onClick={() => setEyeClosed(!eyeClosed)}>About Me.</h2><br></br>
                     Nice to meet you.<br></br><br></br>
                     I’m Daniel, a Front End Developer specialising in React.<br></br><br></br>
                     I’ve been interested in coding from an early age; working on small projects here and there. <br></br><br></br>
@@ -49,7 +48,7 @@ export default function Aboutme() {
             <div className="left">
               <div className="leftContainer">
                 <div className="card-two">
-                <h2 onClick={() => setAbStyle(!abStyle)}>Skills.</h2>
+                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>Skills.</h2>
                   <h3>Languages:</h3>
                   <p>Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.</p>
                   <h3>Methods & Tools:</h3>
@@ -69,7 +68,7 @@ export default function Aboutme() {
 
                 </div>
                 <p className="mediaText">
-                  <h2 onClick={() => setAbStyle(!abStyle)}>Interests.</h2>
+                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>Interests.</h2>
                   My hobbies include
                   <a href="http://www.danielcookingblog.me/"> Cooking</a>,
                   <a href="https://github.com/dcurtis95"><code> Coding</code></a>,

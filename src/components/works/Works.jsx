@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./works.scss"
 
-export default function Works() {
-  const [worksStyle, setWorksStyle] = useState(false);
+export default function Works({ eyeClosed, setEyeClosed }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
@@ -37,7 +36,7 @@ export default function Works() {
   }
   return (
     <div className="works" id="works">
-      <div className={"slider "  + (worksStyle && "active")} style={{transform: `translateX(-${currentSlide *100}vw)`}}>
+      <div className={"slider " + (eyeClosed && "active")} style={{transform: `translateX(-${currentSlide *100}vw)`}}>
         {data.map(d=>(
         <div className="container">
           <div className="item">
@@ -47,7 +46,7 @@ export default function Works() {
                   <div className="imgContainer">
                     <img src={d.icon} alt="Web App" />
                   </div>
-                    <h2 onClick={() => setWorksStyle(!worksStyle)}>{d.title}</h2>
+                    <h2 onClick={() => setEyeClosed(!eyeClosed)}>{d.title}</h2>
                 </div>
                 <p>
                   {d.desc}

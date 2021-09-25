@@ -13,9 +13,16 @@
   .portfolio{
     h1  {
     font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     }
     .container {
       align-items: flex-start;
+      justify-content: flex-start;
+      justify-content: center;
+    }
+    ul {
+      margin-bottom: 30px;
     }
   }
 }
@@ -72,7 +79,6 @@
     width: 70%;
     height: 90%;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 
     .item {

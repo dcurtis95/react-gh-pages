@@ -18,9 +18,9 @@ function App() {
       <div className="sections">
         <Intro eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
         <Portfolio eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
-        <Works/>
-        <Aboutme/>
-        <Contact/>
+        <Works eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
+        <Aboutme eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
+        <Contact eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
       </div>
     </div>
   );

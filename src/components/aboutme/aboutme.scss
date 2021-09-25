@@ -35,7 +35,7 @@
             align-items: flex-start;
             .card-one {
               p {
-              font-size: 14px;
+              // font-size: 14px;
               padding: 10px
               }
             }
@@ -72,7 +72,6 @@
   align-items: center;
   justify-items: center;
   position: relative;
-  padding-top: 70px;
   overflow: hidden;
 
   .slider {
@@ -83,6 +82,7 @@
     justify-content: center;
     left: 0;
     transition: all 1s ease-out;
+    padding-top: 70px;
 
     .container {
       height: 80%;
@@ -171,8 +171,11 @@
             }
 
             .mediaText {
-                height: 20%;
-                margin-top: 10px;
+                height: 100%;
+                margin-bottom: 10px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
                 a {
                   text-decoration: none;
                   color: black;

@@ -58,7 +58,6 @@
   align-items: center;
   justify-items: center;
   position: relative;
-  padding-top: 70px;
   overflow: hidden;
 
   .slider {
@@ -69,6 +68,7 @@
     justify-content: center;
     left: 0;
     transition: all 1s ease-out;
+    padding-top: 70px;
 
     .container {
       height: 80%;
@@ -106,9 +106,11 @@
               flex-direction: row;
               align-items: center;
               justify-content: flex-start;
+              overflow: hidden;
               h2 {
                 margin-left: 10px;
                 cursor: pointer;
+                overflow: hidden;
               }
             }
 
@@ -128,6 +130,7 @@
 
             h2 {
               font-size: 22px;
+              overflow: hidden;
             }
 
             p {
@@ -135,7 +138,7 @@
               line-height: 22px;
               display: flex;
               align-items: center;
-
+              overflow: hidden;
             }
 
             span {
