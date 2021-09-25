@@ -3,8 +3,7 @@ import React, { useRef } from "react";
 import emailjs from 'emailjs-com';
 import "./contact.scss";
 
-export default function Contact() {
-  const [contactStyle, setContactStyle] = useState(false);
+export default function Contact({ eyeClosed, setEyeClosed }) {
   const [message, setMessage] = useState(false);
   const form = useRef();
 
@@ -21,10 +20,10 @@ export default function Contact() {
       setMessage(true);
   };
   return (
-    <div className={"contact " + (contactStyle && "active")} id="contact">
+    <div className={"contact " + (eyeClosed && "active")} id="contact">
       <div className="item">
         <div className="right">
-          <h2 onClick={() => setContactStyle(!contactStyle)}>Contact.</h2>
+          <h2 onClick={() => setEyeClosed(!eyeClosed)}>Contact.</h2>
           <form ref={form} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="name" />
             <input type="text" placeholder="Subject" name="subject" />

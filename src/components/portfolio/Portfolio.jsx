@@ -3,8 +3,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import { webPortfolio, mobilePortfolio, rubyPortfolio } from "../../data";
 
-export default function Portfolio() {
-  const [portStyle, setPortStyle] = useState(false);
+export default function Portfolio({ eyeClosed, setEyeClosed }) {
   const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
   const list = [
@@ -40,8 +39,8 @@ export default function Portfolio() {
   },[selected])
 
   return (
-    <div className={"portfolio " + (portStyle && "active")} id="portfolio">
-      <h1 onClick={() => setPortStyle(!portStyle)}>Portfolio</h1>
+    <div className={"portfolio " + (eyeClosed && "active")} id="portfolio">
+      <h1 onClick={() => setEyeClosed(!eyeClosed)}>Portfolio</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
