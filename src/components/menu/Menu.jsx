@@ -8,19 +8,19 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <br />
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#intro">Home</a>
+          <a href="#intro">Home.</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">Portfolio.</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#works">Works</a>
+          <a href="#works">Works.</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#aboutme">About Me</a>
+          <a href="#aboutme">About Me.</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contact.</a>
         </li>
         <li>
 
@@ -32,10 +32,10 @@ export default function Menu({ menuOpen, setMenuOpen }) {
 
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="https://linkedin.com/in/dcurtis95">LinkedIn</a>
+          <a href="https://linkedin.com/in/dcurtis95">LinkedIn.</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="https://github.com/dcurtis95">Github</a>
+          <a href="https://github.com/dcurtis95">Github.</a>
         </li>
       </ul>
     </div>

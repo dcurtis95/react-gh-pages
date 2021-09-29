@@ -13,7 +13,7 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
       typeSpeed: 100,
       backDelay: 10000,
       backSpeed: 100,
-      strings: ["Hello!", "Welcome!"],
+      strings: ["Hello.", "Welcome."],
     });
   }, []);
 
