@@ -1,46 +1,46 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { webPortfolio, mobilePortfolio, rubyPortfolio } from "../../data";
+import { sidePortfolio, mainPortfolio, dessertPortfolio } from "../../data";
 
 export default function Portfolio({ eyeClosed, setEyeClosed }) {
   const [selected, setSelected] = useState("web");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "web",
-      title: "Web App",
+      id: "side",
+      title: "Salads & Sides",
     },
     {
-      id: "mobile",
-      title: "Mobile / React",
+      id: "main",
+      title: "Mains",
     },
     {
-      id: "ruby",
-      title: "Ruby on Rails",
+      id: "dessert",
+      title: "Desserts",
     },
   ];
 
   useEffect(()=>{
     switch(selected){
-      case "web":
-      setData(webPortfolio);
+      case "side":
+      setData(sidePortfolio);
       break;
-      case "mobile":
-      setData(mobilePortfolio);
+      case "main":
+      setData(mainPortfolio);
       break;
-      case "ruby":
-      setData(rubyPortfolio);
+      case "dessert":
+      setData(dessertPortfolio);
       break;
       default:
-      setData(webPortfolio);
+      setData(mainPortfolio);
     }
 
   },[selected])
 
   return (
     <div className={"portfolio " + (eyeClosed && "active")} id="portfolio">
-      <h1 onClick={() => setEyeClosed(!eyeClosed)}>Portfolio.</h1>
+      <h1 onClick={() => setEyeClosed(!eyeClosed)}>Recipes</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList

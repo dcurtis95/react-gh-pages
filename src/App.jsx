@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
+// import Works from "./components/works/Works";
 import Aboutme from "./components/aboutme/Aboutme";
 import Contact from "./components/contact/Contact";
 import "./app.scss"
@@ -18,7 +18,7 @@ function App() {
       <div className="sections">
         <Intro eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
         <Portfolio eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
-        <Works eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
+        {/* <Works eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/> */}
         <Aboutme eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
         <Contact eyeClosed={eyeClosed} setEyeClosed={setEyeClosed}/>
       </div>

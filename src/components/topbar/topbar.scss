@@ -18,6 +18,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @media(max-width: 981px) {
+      padding: 10px 3%;
+    }
+
+
     .left {
       display: flex;
       align-items: center;
@@ -67,6 +72,26 @@
 
         span:nth-child(8){
           animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 1.6s both;
+        }
+
+        span:nth-child(9){
+          animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 1.8s both;
+        }
+
+        span:nth-child(10){
+          animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 2.0s both;
+        }
+
+        span:nth-child(11){
+          animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 2.2s both;
+        }
+
+        span:nth-child(12){
+          animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 2.4s both;
+        }
+
+        span:nth-child(13){
+          animation: animate 1s cubic-bezier(0.72,-0.45,0.29,1.60) 2.6s both;
         }
       }
 
