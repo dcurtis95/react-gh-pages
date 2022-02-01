@@ -31,12 +31,9 @@ export default function Aboutme({ eyeClosed, setEyeClosed }) {
                     <p>
                     <h2 onClick={() => setEyeClosed(!eyeClosed)}>About Me.</h2><br></br>
                     Nice to meet you.<br></br><br></br>
-                    I’m Daniel, a Front End Developer specialising in React.<br></br><br></br>
-                    I’ve been interested in coding from an early age; working on small projects here and there. <br></br><br></br>
-                    I’m a psychiatric nurse by background and from working in the NHS,
-                    I have noted many inefficiencies with clinical documentation software.
-                    This is what inspired me to complete a product-driven intensive bootcamp,
-                    I am specifically pursuing frontend development to help improve user interaction within a given interface and what is best practice when creating intuitive design.
+                    I’m Daniel, a Home Cook From London.<br></br><br></br>
+                    I’ve been interested in coooking from an early age; working on fine tuning recipes here and there. <br></br><br></br>
+
                     </p>
                   </div>
                 </div>
@@ -48,13 +45,13 @@ export default function Aboutme({ eyeClosed, setEyeClosed }) {
             <div className="left">
               <div className="leftContainer">
                 <div className="card-two">
-                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>Skills.</h2>
-                  <h3>Languages:</h3>
+                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>TBA</h2>
+                  {/* <h3>Languages:</h3>
                   <p>Ruby, JavaScript (ES6), CSS3 (SCSS), HTML5.</p>
                   <h3>Methods & Tools:</h3>
                   <p>Webpack, NPM, Yarn, Git, Heroku, OOP.</p>
                   <h3>Frameworks & Libs:</h3>
-                  <p>React, jQuery, Node, Rails, Bootstrap.</p>
+                  <p>React, jQuery, Node, Rails, Bootstrap.</p> */}
                 </div>
               </div>
             </div>
@@ -68,16 +65,16 @@ export default function Aboutme({ eyeClosed, setEyeClosed }) {
 
                 </div>
                 <p className="mediaText">
-                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>Interests.</h2>
-                  My hobbies include
+                  <h2 onClick={() => setEyeClosed(!eyeClosed)}>TBA</h2>
+                  {/* My hobbies include
                   <a href="http://www.danielcookingblog.me/"> Cooking</a>,
                   <a href="https://github.com/dcurtis95"><code> Coding</code></a>,
                   <a href="https://www.swingpatrol.co.uk/"> Dancing</a>,
                   <a href="https://boardgamegeek.com/collection/user/Kerze"> Board Games </a>and
-                  <a href="https://soundcloud.com/a-fluffy-sheep/tracks"> Music</a>:
+                  <a href="https://soundcloud.com/a-fluffy-sheep/tracks"> Music</a>: */}
                 </p>
                 <div className="s-container">
-                <ResponsivePlayer />
+                {/* <ResponsivePlayer /> */}
                 </div>
               </div>
             </div>

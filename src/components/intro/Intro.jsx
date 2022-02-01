@@ -25,12 +25,12 @@ export default function Intro({ eyeClosed, setEyeClosed }) {
             &#160;
             <span ref={textRef}></span>
           </h1>
-          <h3>I'm Daniel, a Front End Developer from London.</h3>
+          <h3>I'm Daniel, a Home Cook from London.</h3>
         </div>
       </div>
       <div className="right">
         <div className="imgContainer">
-          <img src="assets/Daniel.png" alt="Daniel Curtis"></img>
+          <img src="assets/dinnerwithdan.png" alt="Daniel Curtis"></img>
           <div className="overlay" onClick={() => setEyeClosed(!eyeClosed)}>
             <div className="overlay-title">
               <div className="overlay-description">

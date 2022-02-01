@@ -1,44 +1,27 @@
-export const webPortfolio = [
+export const sidePortfolio = [
   {
     id: 1,
-    title: "BeNatural",
-    img: "assets/BeNatural.png",
-    url: "http://be-natural-project.herokuapp.com/"
-  },
-  {
-    id: 2,
-    title: "LaCasserole",
-    img: "assets/LaCasserole.png",
-    url: "https://la-casserole-new.herokuapp.com/chefs"
-  },
-  {
-    id: 3,
-    title: "Portfolio",
-    img: "assets/Portfolio.png",
-    url: "https://www.daniel-curtis.co.uk/"
+    title: "Irish Soda Bread & Cultured Butter",
+    img: "assets/IrishSodaBread&CulturedButterImage.jpg",
+    url: "http://www.dinnerwithdan.co.uk/IrishSodaBread&CulturedButter"
   },
 ];
 
-export const mobilePortfolio = [
+export const mainPortfolio = [
   {
     id: 1,
-    title: "Portfolio",
-    img: "assets/Portfolio.png",
-    url: "https://www.daniel-curtis.co.uk/"
-  },
-];
-
-export const rubyPortfolio = [
-  {
-    id: 1,
-    title: "BeNatural",
-    img: "assets/BeNatural.png",
-    url: "http://be-natural-project.herokuapp.com/"
+    title: "Crispy Duck Pancakes",
+    img: "assets/CrispyDuckPancakesImage.png",
+    url: "http://www.dinnerwithdan.co.uk/CrispyDuckPancakes"
   },
   {
     id: 2,
-    title: "LaCasserole",
-    img: "assets/LaCasserole.png",
-    url: "https://la-casserole-new.herokuapp.com/chefs"
+    title: "Chicken Congee",
+    img: "assets/ChickenCongeeImage.jpg",
+    url: "http://www.dinnerwithdan.co.uk/ChickenCongee"
   },
+];
+
+export const dessertPortfolio = [
+
 ];

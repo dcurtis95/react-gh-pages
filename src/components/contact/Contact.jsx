@@ -23,7 +23,7 @@ export default function Contact({ eyeClosed, setEyeClosed }) {
     <div className={"contact " + (eyeClosed && "active")} id="contact">
       <div className="item">
         <div className="right">
-          <h2 onClick={() => setEyeClosed(!eyeClosed)}>Contact.</h2>
+          <h2 onClick={() => setEyeClosed(!eyeClosed)}>Contact Me</h2>
           <form ref={form} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" name="name" />
             <input type="text" placeholder="Subject" name="subject" />

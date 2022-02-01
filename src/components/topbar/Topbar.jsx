@@ -7,13 +7,18 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="left">
           <a href="#intro" className="logo">
             <span>d</span>
-            <span>c</span>
-            <span>u</span>
-            <span>r</span>
-            <span>t</span>
             <span>i</span>
-            <span>s</span>
-            <span>.</span>
+            <span>n</span>
+            <span>n</span>
+            <span>e</span>
+            <span>r</span>
+            <span>w</span>
+            <span>i</span>
+            <span>t</span>
+            <span>h</span>
+            <span>d</span>
+            <span>a</span>
+            <span>n</span>
             </a>
           <div className="itemContainer">
           </div>
