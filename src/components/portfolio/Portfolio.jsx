@@ -40,7 +40,7 @@ export default function Portfolio({ eyeClosed, setEyeClosed }) {
 
   return (
     <div className={"portfolio " + (eyeClosed && "active")} id="portfolio">
-      <h1 onClick={() => setEyeClosed(!eyeClosed)}>Recipes</h1>
+      <h1 onClick={() => setEyeClosed(!eyeClosed)}>Recipes:</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
