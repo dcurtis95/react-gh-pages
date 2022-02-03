@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import { sidePortfolio, mainPortfolio, dessertPortfolio } from "../../data";
+import ReactPlayer from "react-player";
 
 export default function Portfolio({ eyeClosed, setEyeClosed }) {
   const [selected, setSelected] = useState("web");
@@ -56,8 +57,27 @@ export default function Portfolio({ eyeClosed, setEyeClosed }) {
 
 
         <div className="item">
-              <img src={d.img} alt={d.title} />
-            <h3>{d.title}</h3>
+            <ReactPlayer
+              width='100%'
+              height='100%'
+              controls
+              url={d.video}
+              alt={d.title}
+              muted={false}
+              playing={true}
+              light={true}
+              config={{
+                file: {
+                  attributes: {
+                    crossorigin: 'anonymous',
+                    controlsList: 'nodownload'
+                  },
+                },
+              }}
+
+            />
+
+              <h3>{d.title}</h3>
         </div>
         ))}
       </div>
